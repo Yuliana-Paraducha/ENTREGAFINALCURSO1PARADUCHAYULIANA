@@ -1,0 +1,286 @@
+$color-personalizado1: #0a497b; /*definimos color personalizado1*/
+
+.navbar-blue {
+    background-color: $color-personalizado1;
+   }
+   
+   
+   
+   // _variables.scss
+$color-fondo-navbar: #0a497b;
+$color-texto: #fff;
+$color-texto-hover: #ff0000;
+
+// _navbar.scss
+.navbar {
+  background-color: $color-fondo-navbar;
+}
+
+.navbar-nav .nav-link {
+  color: $color-texto;
+
+  &:hover {
+    color: $color-texto-hover;
+  }
+}
+//marca barra de navegacion//
+// _variables.scss
+$color-fondo-navbar: #0a497b;
+$color-texto: #fff;
+$color-texto-hover: #ff0000;
+
+// _navbar.scss
+.navbar {
+  background-color: $color-fondo-navbar;
+
+  .navbar-brand {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; // Añade cursor: pointer para indicar que es un enlace
+
+
+    &:hover {
+      transform: translateY(-5px) scale(1.1); // Desplazamiento hacia arriba y aumento de tamaño
+      color: $color-texto-hover; // Cambio de color al hacer hover
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: $color-texto;
+
+    &:hover {
+      color: $color-texto-hover;
+    }
+  }
+}
+
+//fin marca barra de navegacion//
+
+.servicio-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+//button whatsapp//
+
+$whatsapp-button-size: 3rem;
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    transform: translate(50%, 100%); // Centra horizontalmente y ajusta verticalmente
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+        transform: translate(50%, 0); // Centra horizontalmente y ajusta verticalmente al hacer hover
+    }
+
+    img {
+        width: $whatsapp-button-size;
+        height: $whatsapp-button-size;
+        border-radius: 50%;
+        display: block; // Asegura que la imagen sea un elemento de bloque para el centrado vertical
+        margin: 0 auto; // Centra la imagen horizontalmente
+    }
+}
+
+//fin button whatsapp//
+
+ 
+footer {
+    background-color: $color-personalizado1;
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: red;
+       } 
+    }
+}
+.micarousel {
+    height: 650px; /* Ajusta la altura según tus necesidades */
+    .carousel-inner img {
+        width: 100%; /* Garantiza que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción original de la imagen */
+      }
+    }
+    .container {
+        // Agrega estilos para el contenedor si es necesario
+        .row {
+          // Agrega estilos para la fila si es necesario
+          .col-md-6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; // Alinea los elementos al centro verticalmente
+             text-align: justify; // Alinea el texto al centro horizontalmente
+            padding-top: 200px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-family: 'Arial', sans-serif; // Cambia la fuente del texto
+            font-size: 25px; // Cambia el tamaño de la fuente
+            width: 50%; // Hace que el texto ocupe el porcentaje que le indico de todo el ancho disponible
+               
+            //ajustar el valor según preferencias
+
+                
+                              
+            img {
+              width: 700px; // Para que la imagen ocupe el 100% del ancho de su contenedor
+              height: 500px; // Establece la altura deseada para la imagen (ajusta según sea necesario)
+              padding-top: 10px;
+              padding-bottom: 50px;
+              padding-left: 50px;
+              padding-right: 50px;
+          
+            
+          }
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 42%;
+        margin: auto;
+    }
+
+    .mapauno {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 5%;
+      padding-left: 2%;
+      padding-right: 2%;
+            }
+
+    .rowcontainer {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         padding-top: 5%;
+    }
+
+
+           .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        
+       
+        p {
+            color: #666;
+        }
+
+        .testimonials-container {
+            max-width: 800px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          
+          .testimonial {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 48%;
+            box-sizing: border-box;
+          
+            p {
+              margin-bottom: 15px;
+              font-size: 16px;
+              line-height: 1.6;
+            }
+          
+            .author {
+              font-style: italic;
+              font-size: 14px;
+              color: #888;
+            }
+          }
+
+        
+
+    @media (max-width: 1250px) {
+        .container {
+          .row {
+            .col-md-6 {
+              width: 100%;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+      
+              img {
+                width: 100%; /* Ajusta el ancho al 100% del contenedor */
+                padding: 0;
+                height: auto;
+                margin: 0;
+                border: 0;
+                margin-top: -10rem;
+                margin-bottom: -2rem;
+                    }
+      
+              p {
+                width: 100%;
+                text-align: justify; /* Alinea el texto a la izquierda */
+                padding: 0;
+                border: 0;
+                margin-top: -10rem;
+                margin-bottom: -5rem;
+
+                              
+              }
+            }
+        }
+    }
+    .formulario {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      padding-left: 2%;
+      padding-right: 2%;
+      width: 95%;
+      margin: auto;
+  }
+    }
+         
+         .modificable {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: justify;
+            padding-right: 80px;
+            padding-left: 160px;
+           
+           }
+   
